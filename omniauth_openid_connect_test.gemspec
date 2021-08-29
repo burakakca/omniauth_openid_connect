@@ -5,13 +5,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'omniauth/openid_connect/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'omniauth_openid_connect'
+  spec.name          = 'omniauth_openid_connect_test'
   spec.version       = OmniAuth::OpenIDConnect::VERSION
   spec.authors       = ['John Bohn', 'Ilya Shcherbinin']
-  spec.email         = ['jjbohn@gmail.com', 'm0n9oose@gmail.com']
+  spec.email         = ['jjbohn@gmail.com', 'm0n9oose@gmail.com','burak.akca834@gmail.com']
   spec.summary       = 'OpenID Connect Strategy for OmniAuth'
   spec.description   = 'OpenID Connect Strategy for OmniAuth.'
-  spec.homepage      = 'https://github.com/m0n9oose/omniauth_openid_connect'
+  spec.homepage      = 'https://github.com/burakakca/omniauth_openid_connect'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'addressable', '~> 2.5'
-  spec.add_dependency 'omniauth', '~> 1.9'
+  spec.add_dependency 'omniauth', '~> 2.0'
   spec.add_dependency 'openid_connect', '~> 1.1'
   spec.add_development_dependency 'coveralls', '~> 0.8'
   spec.add_development_dependency 'faker', '~> 1.6'
